@@ -1,5 +1,9 @@
 # redisCluster
 
+
+
+## replication
+
 download redis.conf
 
 ```
@@ -18,7 +22,7 @@ requirepass 123456
 bind 0.0.0.0 
 ​```
 
-/mnt/redis/slavel1/data/redis.conf
+/mnt/redis/slave1/data/redis.conf
 ​```
 dir /data 
 appendonly yes
@@ -28,7 +32,7 @@ masterauth 123456
 ​```
 
 
-/mnt/redis/slavel2/redis.conf
+/mnt/redis/slave2/redis.conf
 ​```
 dir /data 
 appendonly yes
@@ -93,4 +97,10 @@ repl_backlog_size:1048576
 repl_backlog_first_byte_offset:1
 repl_backlog_histlen:1597
 ```
+
+
+
+
+
+
 
