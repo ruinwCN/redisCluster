@@ -42,7 +42,7 @@ masterauth 123456
 ​```
 
 
-192.168.0.2 is localnetwork
+192.168.0.2 is localnetwork ip
 ```
 
 
@@ -60,7 +60,7 @@ docker run --name redis-master -p 6379:6379 \
 ```
 
 ```shell
-# slavel 1
+# slave 1
 docker run --name redis-slave1 -p 6380:6379 \
 		   -v /mnt/redis/slave1/data:/data \
 		   -v /mnt/redis/slave1/data/redis.conf:/etc/redis/redis.conf \
@@ -68,7 +68,7 @@ docker run --name redis-slave1 -p 6380:6379 \
 ```
 
 ```shell
-# slavel 2
+# slave 2
 docker run --name redis-slave2 -p 6381:6379 \
 		   -v /mnt/redis/slave2/data:/data \
 		   -v /mnt/redis/slave2/data/redis.conf:/etc/redis/redis.conf \
